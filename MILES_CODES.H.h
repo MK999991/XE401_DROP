@@ -5,10 +5,10 @@
 
 struct MILES_Code {
     const char* description;
-    uint8_t pattern[11];
+    uint8_t pattern[11]; // 11-bit MILES word; index 0..10
 };
 
-// Example codes (replace with your authoritative codes as needed)
+// ---- Example codes (replace with your real ones) ----
 const MILES_Code PLAYER_UNIVERSAL_KILL = {
     "Universal Kill",
     {1, 1, 0, 0, 0, 1, 0, 1, 1, 0, 1}
